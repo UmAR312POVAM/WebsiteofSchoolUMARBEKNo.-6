@@ -1,0 +1,585 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Учителя школы</title>
+    <link rel="stylesheet" href="styles/style.css">
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f8f8f8;
+            margin: 0;
+            padding: 0;
+            color: #333;
+        }
+        header {
+            background-color: #2c3e50;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 36px;
+        }
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            text-align: center;
+        }
+        nav ul li {
+            display: inline;
+            margin-right: 15px;
+        }
+        nav ul li a {
+            color: hsl(204, 64%, 44%);
+            text-decoration: none;
+            font-size: 18px;
+            transition: color 0.3s;
+        }
+        nav ul li a:hover {
+            color: #e74c3c;
+        }
+        .container {
+            padding: 20px;
+            max-width: 1100px;
+            margin: 0 auto;
+        }
+        h3 {
+            font-size: 24px;
+            color: hsl(204, 64%, 44%);
+            margin-bottom: 10px;
+        }
+        p {
+            font-size: 18px;
+            line-height: 1.6;
+            margin-bottom: 20px;
+            text-align: justify;
+        }
+        .highlight {
+            font-weight: bold;
+            color: #e74c3c;
+        }
+        footer {
+            background-color: #2c3e50;
+            color: white;
+            padding: 20px;
+            text-align: center;
+            margin-top: 30px;
+        }
+        footer .social-links a {
+            color: white;
+            margin: 0 10px;
+            font-size: 20px;
+            text-decoration: none;
+        }
+        footer .social-links a:hover {
+            color: #e74c3c;
+        }
+        .modal {
+            display: none;
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background-color: rgb(248, 241, 241);
+            border: 1px solid #f6f5f8;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            width: 300px;
+            z-index: 1000;
+            border-radius: 8px;
+        }
+        .modal h3 {
+            margin-top: 0;
+        }
+        .modal-overlay {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.5);
+            z-index: 999;
+        }
+        #close-modal {
+            display: inline-block;
+            padding: 5px 10px;
+            background-color: #42e73c;
+            color: rgb(244, 243, 248);
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 14px;
+            position: absolute;
+            bottom: 10px;
+            right: 10px;
+        }
+        #close-modal:hover {
+            background-color: #c0392b;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Школа города Истиклол</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Главная</a></li>
+                <li><a href="news.html">Новости</a></li>
+                <li><a href="classes.html">Классы</a></li>
+                <li><a href="achievements.html">Достижения</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="container">
+        <p>Школа №6 гордится высококвалифицированным и преданным делу коллективом педагогов, которые стремятся создать лучшие условия для учебного процесса и развития каждого ученика. Наши преподаватели обладают не только глубокими знаниями в своих областях, но и богатым педагогическим опытом, что позволяет им эффективно передавать знания и навыки, которые необходимы для успеха в современном мире.</p>
+
+        <h3>РЕЙТИНГ И ДОСТИЖЕНИЯ</h3>
+        <p>Учителя школы №6 — это настоящие профессионалы своего дела. Каждый из них имеет высшее образование и опыт работы в разных образовательных учреждениях, что позволяет применять самые эффективные методы преподавания и инновационные подходы в обучении. Преподаватели школы регулярно принимают участие в различных конкурсах и конференциях, где отмечаются их достижения и вклад в развитие образовательного процесса.</p>
+        
+        <h3>ПРОФЕССИОНАЛЬНЫЙ СОСТАВ</h3>
+        <p>Наши учителя — это не просто педагоги, а настоящие наставники для своих учеников. Каждый из них приносит свою уникальную компетенцию и увлеченность предметом. Например, учителя <span class="highlight">математики</span>, <span class="highlight">химии</span> и <span class="highlight">физики</span> проводят дополнительные занятия для подготовки к олимпиадам и экзаменам, помогая ребятам достигать высоких результатов на различных конкурсах. Преподаватели языков, таких как <span class="highlight">русский</span>, <span class="highlight">английский</span> и <span class="highlight">литература</span>, помогают развить у школьников навыки общения, критического мышления и творческого подхода к учебе.</p>
+        
+        <h3>ИННОВАЦИОННЫЕ ПОДХОДЫ</h3>
+        <p>В нашей школе активно внедряются современные технологии и методы обучения. Преподаватели <span class="highlight">географии</span> используют цифровые карты, <span class="highlight">физики</span> — новейшие лабораторные разработки, а преподаватели иностранных языков проводят занятия в формате онлайн, что позволяет учащимся гибко подходить к учебному процессу. Уроки проводятся с учетом индивидуальных особенностей каждого ученика, что помогает им лучше усваивать материал и развивать свои способности.</p>
+        
+        <h3>ПОДГОТОВКА К ОЛИМПИАДАМ И ЭКЗАМЕНАМ</h3>
+        <p>Особое внимание уделяется подготовке учащихся к государственным экзаменам и олимпиадам. Учителя <span class="highlight">биологии</span>, <span class="highlight">химии</span>, <span class="highlight">физики</span> и других предметов регулярно организуют дополнительные курсы, где дети могут углубить свои знания и подготовиться к важным экзаменам, таким как <span class="highlight">ЕГЭ</span>, а также участвовать в школьных и городских олимпиадах, где многие наши ученики занимают призовые места.</p>
+        
+        <h3>ЛИДЕРЫ ОБРАЗОВАНИЯ</h3>
+        <p>Каждый педагог школы №6 по-настоящему предан своей профессии и всегда стремится к совершенствованию. Учителя регулярно повышают свою квалификацию, принимают участие в педагогических семинарах и конференциях, чтобы быть в курсе новейших образовательных трендов и обеспечивать наивысший уровень преподавания для своих учеников. Они понимают, как важно создавать поддерживающую и вдохновляющую атмосферу, где каждый школьник может раскрыть свой потенциал и достичь успеха.</p>
+        
+        <p>Таким образом, учителя школы №6 являются не только источником знаний, но и примером для подражания, вдохновляя учеников на успехи в учебе и жизни в целом. Мы уверены, что с такими профессионалами наши ученики будут готовы к любым вызовам и смогут добиться высоких результатов как в учебе, так и в дальнейшей жизни.</p>
+    </div>
+    <main>
+        <h2>Список учителей</h2>
+        <table id="teachers-table">
+            <thead>
+                <tr>
+                    <th>Имя</th>
+                    <th>Предмет</th>
+                    <th>Возраст</th>
+                    <th>Классы</th>
+                    <th>Контакт</th>
+                    <th>Опыт</th>
+                    <th>Образование</th>
+                    <th>Университет</th>
+                    <th>Оценка преподавания</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Учителя -->
+                <tr data-teacher='{"name":"Муҳаммадҷон Раҳматов", "subject":"Риёзӣ", "details":"Окончил ТГУ, 12 лет опыта, рекомендован лучшим учителем района в 2021 году."}'>
+                    <td><a href="#" class="teacher-link">Муҳаммадҷон Раҳматов</a></td>
+                    <td>Риёзӣ</td>
+                    <td>35</td>
+                    <td>1-А, 2-Б</td>
+                    <td>muhammadjon.rahmatov@school.com</td>
+                    <td>12</td>
+                    <td>Высшее</td>
+                    <td>ТГУ</td>
+                    <td>9.5/10</td>
+                </tr>
+                <!-- Дополнительные записи -->
+                <tr data-teacher='{"name":"Зебо Каримова", "subject":"Забони русӣ", "details":"Выпускница РГУ, 15 лет опыта, проводит внеклассные занятия по литературе."}'>
+                    <td><a href="#" class="teacher-link">Зебо Каримова</a></td>
+                    <td>Забони русӣ</td>
+                    <td>40</td>
+                    <td>3-А, 4-Б</td>
+                    <td>zebo.karimova@school.com</td>
+                    <td>15</td>
+                    <td>Высшее</td>
+                    <td>РГУ</td>
+                    <td>9.0/10</td>
+                </tr>
+                <tr data-teacher='{"name":"Муҳаммадҷон Раҳматов", "subject":"Риёзӣ", "details":"Окончил ТГУ, 12 лет опыта, рекомендован лучшим учителем района в 2021 году."}'>
+                    <td><a href="#" class="teacher-link">Муҳаммадҷон Раҳматов</a></td>
+                    <td>Риёзӣ</td>
+                    <td>35</td>
+                    <td>1-А, 2-Б</td>
+                    <td>muhammadjon.rahmatov@school.com</td>
+                    <td>12</td>
+                    <td>Высшее</td>
+                    <td>ТГУ</td>
+                    <td>9.5/10</td>
+                </tr>
+                <tr data-teacher='{"name":"Зебо Каримова", "subject":"Забони русӣ", "details":"Выпускница РГУ, 15 лет опыта, проводит внеклассные занятия по литературе."}'>
+                    <td><a href="#" class="teacher-link">Зебо Каримова</a></td>
+                    <td>Забони русӣ</td>
+                    <td>40</td>
+                    <td>3-А, 4-Б</td>
+                    <td>zebo.karimova@school.com</td>
+                    <td>15</td>
+                    <td>Высшее</td>
+                    <td>РГУ</td>
+                    <td>9.0/10</td>
+                </tr>
+                <tr data-teacher='{"name":"Абдулло Мирзоев", "subject":"Таърих", "details":"Закончил МГУ, 25 лет опыта, организатор исторических экскурсий для учеников."}'>
+                    <td><a href="#" class="teacher-link">Абдулло Мирзоев</a></td>
+                    <td>Таърих</td>
+                    <td>50</td>
+                    <td>2-Б, 3-А</td>
+                    <td>abdullo.mirzoev@school.com</td>
+                    <td>25</td>
+                    <td>Высшее</td>
+                    <td>МГУ</td>
+                    <td>9.8/10</td>
+                </tr>
+                <tr data-teacher='{"name":"Сабрина Давлатова", "subject":"Биология", "details":"Окончила ТНУ, 8 лет опыта, участница международных научных конференций."}'>
+                    <td><a href="#" class="teacher-link">Сабрина Давлатова</a></td>
+                    <td>Биология</td>
+                    <td>29</td>
+                    <td>6-А, 7-Б</td>
+                    <td>sabrina.davlatova@school.com</td>
+                    <td>8</td>
+                    <td>Высшее</td>
+                    <td>ТНУ</td>
+                    <td>9.2/10</td>
+                </tr>
+                <tr data-teacher='{"name":"Шерали Ибрагимов", "subject":"Физика", "details":"Выпускник ТПУ, 20 лет опыта, разработал уникальную методику преподавания."}'>
+                    <td><a href="#" class="teacher-link">Шерали Ибрагимов</a></td>
+                    <td>Физика</td>
+                    <td>45</td>
+                    <td>9-А, 10-Б</td>
+                    <td>sherali.ibrahimov@school.com</td>
+                    <td>20</td>
+                    <td>Высшее</td>
+                    <td>ТПУ</td>
+                    <td>9.7/10</td>
+                </tr>
+                <tr data-teacher='{"name":"Малика Сафарова", "subject":"Химия", "details":"Окончила РГУ, 18 лет опыта, регулярно готовит учеников к олимпиадам."}'>
+                    <td><a href="#" class="teacher-link">Малика Сафарова</a></td>
+                    <td>Химия</td>
+                    <td>38</td>
+                    <td>8-А, 9-Б</td>
+                    <td>malika.safarova@school.com</td>
+                    <td>18</td>
+                    <td>Высшее</td>
+                    <td>РГУ</td>
+                    <td>9.6/10</td>
+                </tr>
+                <tr data-teacher='{"name":"Фаррух Абдуллоев", "subject":"География", "details":"Окончил МГУ, 10 лет опыта, активно использует цифровые карты в обучении."}'>
+                    <td><a href="#" class="teacher-link">Фаррух Абдуллоев</a></td>
+                    <td>География</td>
+                    <td>34</td>
+                    <td>5-А, 6-Б</td>
+                    <td>farrukh.abdulloev@school.com</td>
+                    <td>10</td>
+                    <td>Высшее</td>
+                    <td>МГУ</td>
+                    <td>9.4/10</td>
+                </tr>
+                <tr data-teacher='{"name":"Шахноза Холмуродова", "subject":"Математика", "details":"Окончила ТНУ, 15 лет опыта, проводит подготовительные курсы для ЕГЭ."}'>
+                    <td><a href="#" class="teacher-link">Шахноза Холмуродова</a></td>
+                    <td>Математика</td>
+                    <td>39</td>
+                    <td>7-А, 8-Б</td>
+                    <td>shahnosa.kholmurodova@school.com</td>
+                    <td>15</td>
+                    <td>Высшее</td>
+                    <td>ТНУ</td>
+                    <td>9.3/10</td>
+                </tr>
+                <tr data-teacher='{"name":"Насимджон Камолов", "subject":"Английский язык", "details":"Закончил Лондонский университет, 12 лет опыта, организует разговорные клубы."}'>
+                    <td><a href="#" class="teacher-link">Насимджон Камолов</a></td>
+                    <td>Английский язык</td>
+                    <td>36</td>
+                    <td>5-Б, 6-А</td>
+                    <td>nasim.kamolov@school.com</td>
+                    <td>12</td>
+                    <td>Высшее</td>
+                    <td>Лондонский университет</td>
+                    <td>9.8/10</td>
+                </tr>
+                <tr data-teacher='{"name":"Самира Турсунова", "subject":"Литература", "details":"Окончила ТГУ, 14 лет опыта, проводит литературные вечера и конкурсы."}'>
+                    <td><a href="#" class="teacher-link">Самира Турсунова</a></td>
+                    <td>Литература</td>
+                    <td>41</td>
+                    <td>7-Б, 8-А</td>
+                    <td>samira.tursunova@school.com</td>
+                    <td>14</td>
+                    <td>Высшее</td>
+                    <td>ТГУ</td>
+                    <td>9.1/10</td>
+                </tr>
+                <!-- Повторите подобные строки для всех 30 учителей, изменяя их данные -->
+                <tr data-teacher='{"name":"Муҳаммадҷон Раҳматов", "subject":"Риёзӣ", "details":"Окончил ТГУ, 12 лет опыта, рекомендован лучшим учителем района в 2021 году."}'>
+                    <td><a href="#" class="teacher-link">Муҳаммадҷон Раҳматов</a></td>
+                    <td>Риёзӣ</td>
+                    <td>35</td>
+                    <td>1-А, 2-Б</td>
+                    <td>muhammadjon.rahmatov@school.com</td>
+                    <td>12</td>
+                    <td>Высшее</td>
+                    <td>ТГУ</td>
+                    <td>9.5/10</td>
+                </tr>
+                <tr data-teacher='{"name":"Зебо Каримова", "subject":"Забони русӣ", "details":"Выпускница РГУ, 15 лет опыта, проводит внеклассные занятия по литературе."}'>
+                    <td><a href="#" class="teacher-link">Зебо Каримова</a></td>
+                    <td>Забони русӣ</td>
+                    <td>40</td>
+                    <td>3-А, 4-Б</td>
+                    <td>zebo.karimova@school.com</td>
+                    <td>15</td>
+                    <td>Высшее</td>
+                    <td>РГУ</td>
+                    <td>9.0/10</td>
+                </tr>
+                <tr data-teacher='{"name":"Абдулло Мирзоев", "subject":"Таърих", "details":"Закончил МГУ, 25 лет опыта, организатор исторических экскурсий для учеников."}'>
+                    <td><a href="#" class="teacher-link">Абдулло Мирзоев</a></td>
+                    <td>Таърих</td>
+                    <td>50</td>
+                    <td>2-Б, 3-А</td>
+                    <td>abdullo.mirzoev@school.com</td>
+                    <td>25</td>
+                    <td>Высшее</td>
+                    <td>МГУ</td>
+                    <td>9.8/10</td>
+                </tr>
+                <tr data-teacher='{"name":"Сабрина Давлатова", "subject":"Биология", "details":"Окончила ТНУ, 8 лет опыта, участница международных научных конференций."}'>
+                    <td><a href="#" class="teacher-link">Сабрина Давлатова</a></td>
+                    <td>Биология</td>
+                    <td>29</td>
+                    <td>6-А, 7-Б</td>
+                    <td>sabrina.davlatova@school.com</td>
+                    <td>8</td>
+                    <td>Высшее</td>
+                    <td>ТНУ</td>
+                    <td>9.2/10</td>
+                </tr>
+                <tr data-teacher='{"name":"Шерали Ибрагимов", "subject":"Физика", "details":"Выпускник ТПУ, 20 лет опыта, разработал уникальную методику преподавания."}'>
+                    <td><a href="#" class="teacher-link">Шерали Ибрагимов</a></td>
+                    <td>Физика</td>
+                    <td>45</td>
+                    <td>9-А, 10-Б</td>
+                    <td>sherali.ibrahimov@school.com</td>
+                    <td>20</td>
+                    <td>Высшее</td>
+                    <td>ТПУ</td>
+                    <td>9.7/10</td>
+                </tr>
+                <tr data-teacher='{"name":"Малика Сафарова", "subject":"Химия", "details":"Окончила РГУ, 18 лет опыта, регулярно готовит учеников к олимпиадам."}'>
+                    <td><a href="#" class="teacher-link">Малика Сафарова</a></td>
+                    <td>Химия</td>
+                    <td>38</td>
+                    <td>8-А, 9-Б</td>
+                    <td>malika.safarova@school.com</td>
+                    <td>18</td>
+                    <td>Высшее</td>
+                    <td>РГУ</td>
+                    <td>9.6/10</td>
+                </tr>
+                <tr data-teacher='{"name":"Фаррух Абдуллоев", "subject":"География", "details":"Окончил МГУ, 10 лет опыта, активно использует цифровые карты в обучении."}'>
+                    <td><a href="#" class="teacher-link">Фаррух Абдуллоев</a></td>
+                    <td>География</td>
+                    <td>34</td>
+                    <td>5-А, 6-Б</td>
+                    <td>farrukh.abdulloev@school.com</td>
+                    <td>10</td>
+                    <td>Высшее</td>
+                    <td>МГУ</td>
+                    <td>9.4/10</td>
+                </tr>
+                <tr data-teacher='{"name":"Шахноза Холмуродова", "subject":"Математика", "details":"Окончила ТНУ, 15 лет опыта, проводит подготовительные курсы для ЕГЭ."}'>
+                    <td><a href="#" class="teacher-link">Шахноза Холмуродова</a></td>
+                    <td>Математика</td>
+                    <td>39</td>
+                    <td>7-А, 8-Б</td>
+                    <td>shahnosa.kholmurodova@school.com</td>
+                    <td>15</td>
+                    <td>Высшее</td>
+                    <td>ТНУ</td>
+                    <td>9.3/10</td>
+                </tr>
+                <tr data-teacher='{"name":"Насимджон Камолов", "subject":"Английский язык", "details":"Закончил Лондонский университет, 12 лет опыта, организует разговорные клубы."}'>
+                    <td><a href="#" class="teacher-link">Насимджон Камолов</a></td>
+                    <td>Английский язык</td>
+                    <td>36</td>
+                    <td>5-Б, 6-А</td>
+                    <td>nasim.kamolov@school.com</td>
+                    <td>12</td>
+                    <td>Высшее</td>
+                    <td>Лондонский университет</td>
+                    <td>9.8/10</td>
+                </tr>
+                <tr data-teacher='{"name":"Самира Турсунова", "subject":"Литература", "details":"Окончила ТГУ, 14 лет опыта, проводит литературные вечера и конкурсы."}'>
+                    <td><a href="#" class="teacher-link">Самира Турсунова</a></td>
+                    <td>Литература</td>
+                    <td>41</td>
+                    <td>7-Б, 8-А</td>
+                    <td>samira.tursunova@school.com</td>
+                    <td>14</td>
+                    <td>Высшее</td>
+                    <td>ТГУ</td>
+                    <td>9.1/10</td>
+                </tr>
+                <!-- Additional 10 teachers here -->
+                <tr data-teacher='{"name":"Кароматулло Исмоилов", "subject":"Физическая культура", "details":"Закончил ТДГУ, 20 лет опыта, проводит спортивные мероприятия для учащихся."}'>
+                    <td><a href="#" class="teacher-link">Кароматулло Исмоилов</a></td>
+                    <td>Физическая культура</td>
+                    <td>42</td>
+                    <td>5-А, 6-А</td>
+                    <td>karomatullo.ismoilov@school.com</td>
+                    <td>20</td>
+                    <td>Высшее</td>
+                    <td>ТДГУ</td>
+                    <td>9.6/10</td>
+                </tr>
+                <tr data-teacher='{"name":"Лола Абдурашидова", "subject":"Математика", "details":"Окончила ТГПУ, 10 лет опыта, помогает ученикам готовиться к олимпиадам по математике."}'>
+                    <td><a href="#" class="teacher-link">Лола Абдурашидова</a></td>
+                    <td>Математика</td>
+                    <td>34</td>
+                    <td>9-А, 10-Б</td>
+                    <td>lola.abdurashidova@school.com</td>
+                    <td>10</td>
+                    <td>Высшее</td>
+                    <td>ТГПУ</td>
+                    <td>9.3/10</td>
+                </tr>
+                <tr data-teacher='{"name":"Дилшоджон Нурматов", "subject":"Химия", "details":"Окончил РГУ, 14 лет опыта, проводит лабораторные работы с учениками."}'>
+                    <td><a href="#" class="teacher-link">Дилшоджон Нурматов</a></td>
+                    <td>Химия</td>
+                    <td>37</td>
+                    <td>8-А, 9-А</td>
+                    <td>dilshodjon.nurmatov@school.com</td>
+                    <td>14</td>
+                    <td>Высшее</td>
+                    <td>РГУ</td>
+                    <td>9.4/10</td>
+                </tr>
+                <tr data-teacher='{"name":"Тахмина Касимова", "subject":"Забони англисий", "details":"Выпускница Лондонского университета, 12 лет опыта, проводит онлайн-занятия."}'>
+                    <td><a href="#" class="teacher-link">Тахмина Касимова</a></td>
+                    <td>Забони англисий</td>
+                    <td>32</td>
+                    <td>3-Б, 4-А</td>
+                    <td>takhmina.kasimova@school.com</td>
+                    <td>12</td>
+                    <td>Высшее</td>
+                    <td>Лондонский университет</td>
+                    <td>9.7/10</td>
+                </tr>
+                <tr data-teacher='{"name":"Рафаэль Мирзозода", "subject":"Таърих", "details":"Окончил МГУ, 30 лет опыта, участвует в организации исторических выставок."}'>
+                    <td><a href="#" class="teacher-link">Рафаэль Мирзозода</a></td>
+                    <td>Таърих</td>
+                    <td>53</td>
+                    <td>7-Б, 8-А</td>
+                    <td>rafael.mirzozoda@school.com</td>
+                    <td>30</td>
+                    <td>Высшее</td>
+                    <td>МГУ</td>
+                    <td>9.9/10</td>
+                </tr>
+                <tr data-teacher='{"name":"Марям Холова", "subject":"Математика", "details":"Закончил ТГУ, 18 лет опыта, помогает студентам с подготовкой к ЕГЭ."}'>
+                    <td><a href="#" class="teacher-link">Марям Холова</a></td>
+                    <td>Математика</td>
+                    <td>40</td>
+                    <td>5-А, 9-Б</td>
+                    <td>maryam.kholova@school.com</td>
+                    <td>18</td>
+                    <td>Высшее</td>
+                    <td>ТГУ</td>
+                    <td>9.5/10</td>
+                </tr>
+                <tr data-teacher='{"name":"София Ахмадова", "subject":"Русский язык", "details":"Окончила РГУ, 20 лет опыта, автор учебных материалов по русскому языку."}'>
+                    <td><a href="#" class="teacher-link">София Ахмадова</a></td>
+                    <td>Русский язык</td>
+                    <td>42</td>
+                    <td>1-А, 2-Б</td>
+                    <td>sofiya.ahmadova@school.com</td>
+                    <td>20</td>
+                    <td>Высшее</td>
+                    <td>РГУ</td>
+                    <td>9.8/10</td>
+                </tr>
+                <tr data-teacher='{"name":"Шахриёр Сафаров", "subject":"География", "details":"Закончил МГУ, 17 лет опыта, активно использует компьютерные технологии в обучении."}'>
+                    <td><a href="#" class="teacher-link">Шахриёр Сафаров</a></td>
+                    <td>География</td>
+                    <td>41</td>
+                    <td>6-Б, 7-А</td>
+                    <td>shahriyor.safarov@school.com</td>
+                    <td>17</td>
+                    <td>Высшее</td>
+                    <td>МГУ</td>
+                    <td>9.3/10</td>
+                </tr>
+                <tr data-teacher='{"name":"Рано Гулова", "subject":"Физика", "details":"Окончила ТПУ, 14 лет опыта, специализируется на подготовке к олимпиадам по физике."}'>
+                    <td><a href="#" class="teacher-link">Рано Гулова</a></td>
+                    <td>Физика</td>
+                    <td>36</td>
+                    <td>8-Б, 9-А</td>
+                    <td>rano.gulova@school.com</td>
+                    <td>14</td>
+                    <td>Высшее</td>
+                    <td>ТПУ</td>
+                    <td>9.6/10</td>
+                </tr>
+                <tr data-teacher='{"name":"Шахзода Расулова", "subject":"Литература", "details":"Выпускница ТГУ, 10 лет опыта, проводит курсы по литературе для старшеклассников."}'>
+                    <td><a href="#" class="teacher-link">Шахзода Расулова</a></td>
+                    <td>Литература</td>
+                    <td>35</td>
+                    <td>9-Б, 10-А</td>
+                    <td>shahzoda.rasulova@school.com</td>
+                    <td>10</td>
+                    <td>Высшее</td>
+                    <td>ТГУ</td>
+                    <td>9.4/10</td>
+                </tr>
+                
+                <!-- 28 additional teachers here -->
+            </tbody>
+        </table>
+    </main>
+
+    <div class="modal-overlay" id="modal-overlay"></div>
+    <div class="modal" id="teacher-modal">
+        <h3 id="modal-title"></h3>
+        <p id="modal-details"></p>
+        <button id="close-modal">Закрыть</button>
+    </div>
+
+    
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const modal = document.getElementById('teacher-modal');
+            const modalOverlay = document.getElementById('modal-overlay');
+            const modalTitle = document.getElementById('modal-title');
+            const modalDetails = document.getElementById('modal-details');
+            const closeModal = document.getElementById('close-modal');
+
+            document.querySelectorAll('.teacher-link').forEach(link => {
+                link.addEventListener('click', (e) => {
+                    e.preventDefault();
+                    const teacherData = JSON.parse(e.target.closest('tr').dataset.teacher);
+                    modalTitle.textContent = teacherData.name;
+                    modalDetails.textContent = teacherData.details;
+                    modal.style.display = 'block';
+                    modalOverlay.style.display = 'block';
+                });
+            });
+
+            closeModal.addEventListener('click', () => {
+                modal.style.display = 'none';
+                modalOverlay.style.display = 'none';
+            });
+
+            modalOverlay.addEventListener('click', () => {
+                modal.style.display = 'none';
+                modalOverlay.style.display = 'none';
+            });
+        });
+    </script>
+</body>
+</html>
+
+<footer>
+    © 2025 Школа города Истиклол. Все права защищены.
+    <div class="social-links">
+        <a href="https://facebook.com" target="_blank">Facebook</a> |
+        <a href="https://instagram.com" target="_blank">Instagram</a> |
+        <a href="https://twitter.com" target="_blank">Twitter</a>
+    </div>

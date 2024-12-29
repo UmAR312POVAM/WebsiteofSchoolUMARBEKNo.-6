@@ -1,0 +1,491 @@
+[
+    {
+        "name": "Муҳаммадҷон Раҳматов",
+        "subject": "Риёзӣ",
+        "age": 35,
+        "classes": "1-А, 2-Б",
+        "contact": "muhammadjon.rahmatov@school.com",
+        "experience": 12
+    },
+    {
+        "name": "Зебо Каримова",
+        "subject": "Забони русӣ",
+        "age": 40,
+        "classes": "3-А, 4-Б",
+        "contact": "zebo.karimova@school.com",
+        "experience": 15
+    },
+    {
+        "name": "Абдулло Мирзоев",
+        "subject": "Таърих",
+        "age": 50,
+        "classes": "2-Б, 3-А",
+        "contact": "abdullo.mirzoev@school.com",
+        "experience": 25
+    },
+    {
+        "name": "Фарзона Аҳмадова",
+        "subject": "Биология",
+        "age": 30,
+        "classes": "5-А, 6-Б",
+        "contact": "farzona.ahmadova@school.com",
+        "experience": 8
+    },
+    {
+        "name": "Тимур Шарипов",
+        "subject": "Химия",
+        "age": 45,
+        "classes": "7-А, 8-Б",
+        "contact": "timur.sharipov@school.com",
+        "experience": 18
+    },
+    {
+        "name": "Дилшод Абдуллоев",
+        "subject": "Физика",
+        "age": 38,
+        "classes": "6-А, 7-Б",
+        "contact": "dilshod.abdulloev@school.com",
+        "experience": 10
+    },
+    {
+        "name": "Лола Исоева",
+        "subject": "География",
+        "age": 42,
+        "classes": "5-Б, 6-А",
+        "contact": "lola.isoeva@school.com",
+        "experience": 20
+    },
+    {
+        "name": "Саидбек Ҳамров",
+        "subject": "Технология",
+        "age": 36,
+        "classes": "4-А, 5-А",
+        "contact": "saidbek.hamrov@school.com",
+        "experience": 12
+    },
+    {
+        "name": "Хуршед Турсунов",
+        "subject": "Математика",
+        "age": 40,
+        "classes": "1-А, 4-Б",
+        "contact": "khurshed.tursunov@school.com",
+        "experience": 15
+    },
+    {
+        "name": "Рустамҷон Маҳмадов",
+        "subject": "Музыка",
+        "age": 33,
+        "classes": "2-Б, 3-А",
+        "contact": "rustamjon.mahmadov@school.com",
+        "experience": 7
+    },
+    {
+        "name": "Нигина Давлатова",
+        "subject": "Ихтисос",
+        "age": 37,
+        "classes": "8-А, 9-Б",
+        "contact": "nigina.davlatova@school.com",
+        "experience": 15
+    },
+    {
+        "name": "Махфират Фарухова",
+        "subject": "Физкультура",
+        "age": 41,
+        "classes": "6-Б, 7-А",
+        "contact": "makhfirat.farukhova@school.com",
+        "experience": 18
+    },
+    {
+        "name": "Шоҳина Абдуллоева",
+        "subject": "Кимия",
+        "age": 29,
+        "classes": "9-Б, 10-А",
+        "contact": "shohina.abdulloeva@school.com",
+        "experience": 5
+    },
+    {
+        "name": "Абдукарим Ашуров",
+        "subject": "Англисӣ",
+        "age": 33,
+        "classes": "1-А, 2-Б",
+        "contact": "abdukarim.ashurov@school.com",
+        "experience": 8
+    },
+    {
+        "name": "Файзулло Холмуродов",
+        "subject": "Кимиё",
+        "age": 48,
+        "classes": "3-А, 4-Б",
+        "contact": "faizullo.kholmurodov@school.com",
+        "experience": 22
+    },
+    {
+        "name": "Мадина Саидова",
+        "subject": "Забони тоҷикӣ",
+        "age": 31,
+        "classes": "5-А, 6-А",
+        "contact": "madina.saidova@school.com",
+        "experience": 9
+    },
+    {
+        "name": "Шахрози Қосимов",
+        "subject": "Риёзӣ",
+        "age": 50,
+        "classes": "7-А, 8-Б",
+        "contact": "shakhrozi.qosimov@school.com",
+        "experience": 30
+    },
+        {
+            "name": "Шахрози Қосимов",
+            "subject": "Риёзӣ",
+            "age": 50,
+            "classes": "7-А, 8-Б",
+            "contact": "shakhrozi.qosimov@school.com",
+            "experience": 30
+        },
+        {
+            "name": "Нигина Назарова",
+            "subject": "Забони русӣ",
+            "age": 35,
+            "classes": "7-Б, 9-А",
+            "contact": "nigina.nazarova@school.com",
+            "experience": 12
+        },
+        {
+            "name": "Фарҳод Ҳамдамов",
+            "subject": "Физика",
+            "age": 45,
+            "classes": "8-А, 9-Б",
+            "contact": "farhod.hamdamov@school.com",
+            "experience": 20
+        },
+        {
+            "name": "Саъдия Муҳаммадиева",
+            "subject": "Тарих",
+            "age": 38,
+            "classes": "7-А, 10-Б",
+            "contact": "saidiya.muhammadieva@school.com",
+            "experience": 15
+        },
+        {
+            "name": "Маҳмадалӣ Раҳматов",
+            "subject": "География",
+            "age": 40,
+            "classes": "8-А, 9-А",
+            "contact": "mahmadali.rahmatov@school.com",
+            "experience": 18
+        },
+        {
+            "name": "Ҳусейн Камолов",
+            "subject": "Кимё",
+            "age": 52,
+            "classes": "10-Б, 11-А",
+            "contact": "hussein.kamolov@school.com",
+            "experience": 25
+        },
+        {
+            "name": "Самира Абдурахмонова",
+            "subject": "Биология",
+            "age": 30,
+            "classes": "7-Б, 8-Б",
+            "contact": "samira.abdurahmonova@school.com",
+            "experience": 7
+        },
+        {
+            "name": "Абдуазиз Ашуров",
+            "subject": "Информатика",
+            "age": 28,
+            "classes": "9-А, 10-А",
+            "contact": "abduaziz.ashurov@school.com",
+            "experience": 5
+        },
+        {
+            "name": "Гулбахор Рашидова",
+            "subject": "Культура ва санъат",
+            "age": 50,
+            "classes": "7-А, 8-А",
+            "contact": "gulbahor.rashidova@school.com",
+            "experience": 25
+        },
+        {
+            "name": "Искандар Алиев",
+            "subject": "Англисӣ",
+            "age": 42,
+            "classes": "10-А, 11-Б",
+            "contact": "iskandar.aliyev@school.com",
+            "experience": 18
+        },
+        {
+            "name": "Шахрози Қосимов",
+            "subject": "Риёзӣ",
+            "age": 50,
+            "classes": "7-А, 8-Б",
+            "contact": "shakhrozi.qosimov@school.com",
+            "experience": 30
+        },
+        {
+            "name": "Маҳмадҷон Ҳусейнзода",
+            "subject": "Таърих",
+            "age": 45,
+            "classes": "9-Б, 10-А",
+            "contact": "mahmadjon.husainzoda@school.com",
+            "experience": 20
+        },
+        {
+            "name": "Замира Тошевна",
+            "subject": "Химия",
+            "age": 38,
+            "classes": "7-А, 8-Б",
+            "contact": "zamira.toshevna@school.com",
+            "experience": 15
+        },
+        {
+            "name": "Умед Турсунов",
+            "subject": "Физика",
+            "age": 40,
+            "classes": "9-Б, 10-А",
+            "contact": "umed.tursunov@school.com",
+            "experience": 18
+        },
+        {
+            "name": "Раҷабали Имомов",
+            "subject": "Биология",
+            "age": 47,
+            "classes": "6-А, 7-Б",
+            "contact": "rajabali.imomov@school.com",
+            "experience": 25
+        },
+        {
+            "name": "Фирӯзахон Каримова",
+            "subject": "География",
+            "age": 39,
+            "classes": "4-А, 5-Б",
+            "contact": "firuzakhon.karimova@school.com",
+            "experience": 14
+        },
+        {
+            "name": "Шахноза Абдуллова",
+            "subject": "Музыка",
+            "age": 33,
+            "classes": "2-Б, 3-А",
+            "contact": "shahnoza.abdullova@school.com",
+            "experience": 7
+        },
+        {
+            "name": "Муродбек Ятимов",
+            "subject": "Англисӣ",
+            "age": 44,
+            "classes": "10-А, 11-Б",
+            "contact": "murodbek.yatimov@school.com",
+            "experience": 21
+        },
+        {
+            "name": "Дилшод Маҳмадов",
+            "subject": "Математика",
+            "age": 32,
+            "classes": "5-А, 6-Б",
+            "contact": "dilshod.mahmadov@school.com",
+            "experience": 9
+        },
+        {
+            "name": "Наргиза Ҳасановна",
+            "subject": "Физкультура",
+            "age": 37,
+            "classes": "1-А, 2-Б",
+            "contact": "nargiza.hasanovna@school.com",
+            "experience": 12
+        },
+        {
+            "name": "Мақсуджон Маҳмудов",
+            "subject": "Кимия",
+            "age": 41,
+            "classes": "8-А, 9-Б",
+            "contact": "maqsudjon.mahmudov@school.com",
+            "experience": 16
+        },
+        {
+            "name": "Шокир Раҳимов",
+            "subject": "Ихтисос",
+            "age": 42,
+            "classes": "6-Б, 7-А",
+            "contact": "shokir.rahimov@school.com",
+            "experience": 18
+        },
+        {
+            "name": "Меҳринигори Саидова",
+            "subject": "Технология",
+            "age": 34,
+            "classes": "4-А, 5-Б",
+            "contact": "mehrinigori.saidova@school.com",
+            "experience": 8
+        },
+        {
+            "name": "Тахмина Абдуллоева",
+            "subject": "Забони тоҷикӣ",
+            "age": 31,
+            "classes": "7-А, 8-Б",
+            "contact": "tahmina.abdulloeva@school.com",
+            "experience": 10
+        },
+        {
+            "name": "Шерзода Назаров",
+            "subject": "Таърих",
+            "age": 36,
+            "classes": "3-А, 4-Б",
+            "contact": "sherzoda.nazarov@school.com",
+            "experience": 11
+        },
+        {
+            "name": "Нигина Рустамова",
+            "subject": "Математика",
+            "age": 33,
+            "classes": "5-Б, 6-А",
+            "contact": "nigina.rustamova@school.com",
+            "experience": 8
+        },
+        {
+            "name": "Фарзона Муҳаммадова",
+            "subject": "Биология",
+            "age": 29,
+            "classes": "4-Б, 5-А",
+            "contact": "farzona.muhammadova@school.com",
+            "experience": 6
+        },
+        {
+            "name": "Амирхон Давлатов",
+            "subject": "Физика",
+            "age": 52,
+            "classes": "8-А, 9-Б",
+            "contact": "amirhon.davlatov@school.com",
+            "experience": 30
+        },
+        {
+            "name": "Ҷамила Носирова",
+            "subject": "География",
+            "age": 39,
+            "classes": "2-Б, 3-А",
+            "contact": "jamila.nosirova@school.com",
+            "experience": 12
+        },
+        {
+            "name": "Шавкат Рахимов",
+            "subject": "Риёзӣ",
+            "age": 47,
+            "classes": "7-А, 8-Б",
+            "contact": "shavkat.rahimov@school.com",
+            "experience": 20
+        },
+        {
+            "name": "Файзали Холов",
+            "subject": "Забони русӣ",
+            "age": 41,
+            "classes": "5-А, 6-Б",
+            "contact": "faizali.kholov@school.com",
+            "experience": 18
+        },
+        {
+            "name": "Нозима Сафарова",
+            "subject": "Англисӣ",
+            "age": 34,
+            "classes": "9-Б, 10-А",
+            "contact": "nozima.safarova@school.com",
+            "experience": 9
+        },
+        {
+            "name": "Мавлуда Рахмонова",
+            "subject": "Музыка",
+            "age": 38,
+            "classes": "3-А, 4-Б",
+            "contact": "mavluda.rahmonova@school.com",
+            "experience": 15
+        },
+        {
+            "name": "Убайдулло Абдуллозода",
+            "subject": "Технология",
+            "age": 45,
+            "classes": "6-А, 7-Б",
+            "contact": "ubaidullo.abdullozoda@school.com",
+            "experience": 22
+        },
+        {
+            "name": "Лайло Мухамедова",
+            "subject": "Таърих",
+            "age": 40,
+            "classes": "8-Б, 9-А",
+            "contact": "laylo.mukhamedova@school.com",
+            "experience": 18
+        },
+        {
+            "name": "Шоҳрух Абдураҳмонов",
+            "subject": "Математика",
+            "age": 35,
+            "classes": "2-Б, 3-А",
+            "contact": "shohruh.abdurakhmonov@school.com",
+            "experience": 10
+        },
+        {
+            "name": "Зебо Камолова",
+            "subject": "География",
+            "age": 41,
+            "classes": "5-А, 6-Б",
+            "contact": "zebo.kamolova@school.com",
+            "experience": 17
+        },
+        {
+            "name": "Шодие Муҳаммадов",
+            "subject": "Химия",
+            "age": 46,
+            "classes": "7-А, 8-Б",
+            "contact": "shodie.muhammadov@school.com",
+            "experience": 23
+        },
+        {
+            "name": "Далер Шарипов",
+            "subject": "Риёзӣ",
+            "age": 50,
+            "classes": "3-А, 4-Б",
+            "contact": "dalier.sharipov@school.com",
+            "experience": 25
+        },
+        {
+            "name": "Бибихонум Азизова",
+            "subject": "Ихтисос",
+            "age": 43,
+            "classes": "6-Б, 7-А",
+            "contact": "bibikhonum.azizova@school.com",
+            "experience": 19
+        },
+        {
+            "name": "Ҷамолиддин Сафаров",
+            "subject": "Технология",
+            "age": 39,
+            "classes": "8-Б, 9-А",
+            "contact": "jamoliddin.safarov@school.com",
+            "experience": 15
+        },
+        {
+            "name": "Хуршед Назаров",
+            "subject": "Физика",
+            "age": 33,
+            "classes": "9-А, 10-Б",
+            "contact": "khurshed.nazarov@school.com",
+            "experience": 8
+        },
+        {
+            "name": "Амина Аҳмадова",
+            "subject": "Музыка",
+            "age": 28,
+            "classes": "4-А, 5-Б",
+            "contact": "amina.ahmadova@school.com",
+            "experience": 6
+        },
+        {
+            "name": "Самандар Рахимов",
+            "subject": "Таърих",
+            "age": 44,
+            "classes": "6-Б, 7-А",
+            "contact": "samandar.rahimov@school.com",
+            "experience": 20
+        }
+    ]
+    
